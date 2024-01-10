@@ -6,5 +6,16 @@
 </head>
 <body>
 <h1 th:text="'Welcome to the index page of recipes book :)'"></h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Description</th>
+    </tr>
+    <tr th:each="recipe: ${recipesList}">
+        <td th:text="${recipe.id}"></td>
+        <td th:text="${recipe.description}"></td>
+    </tr>
+</table>
 </body>
 </html>

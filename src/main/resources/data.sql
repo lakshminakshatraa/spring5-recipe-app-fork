@@ -1,0 +1,12 @@
+insert into category (description) values ('Indian');
+insert into category (description) values ('Italian');
+insert into category (description) values ('Mexican');
+insert into category (description) values ('Chinese');
+insert into category (description) values ('American');
+insert into unit_of_measure (uom) values ('teaspoon');
+insert into unit_of_measure (uom) values ('tablespoon');
+insert into unit_of_measure (uom) values ('cup');
+insert into unit_of_measure (uom) values ('pinch');
+insert into unit_of_measure (uom) values ('ounce');
+insert into unit_of_measure (uom) values ('each');
+insert into unit_of_measure (uom) values ('dash');
