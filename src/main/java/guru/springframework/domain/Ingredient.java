@@ -1,12 +1,17 @@
 package guru.springframework.domain;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
 
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 public class Ingredient {
     @Id
@@ -18,7 +23,7 @@ public class Ingredient {
     private BigDecimal amount;
 
     @ManyToOne
-    @EqualsAndHashCode.Exclude
+//    @EqualsAndHashCode.Exclude
     private Recipe recipe;
 
     @OneToOne(fetch = FetchType.EAGER)
